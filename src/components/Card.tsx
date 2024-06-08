@@ -1,8 +1,9 @@
-function Card() {
+function Card(props) {
+    console.log(props);
     return (
         <div className="card">
-            <img src="https://cdn.dummyjson.com/products/images/beauty/Essence%20Mascara%20Lash%20Princess/thumbnail.png" />
-            <p>Essence Mascara Lash Princess</p>
+            <img src={props.url} />
+            <p>{props.title}</p>
         </div>
     );
 }
