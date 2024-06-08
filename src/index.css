@@ -9,4 +9,71 @@ body {
 
 #AppComponent {
     height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: white;
+    height: 70px;
+}
+
+header ul {
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    list-style-type: none;
+}
+/* 
+header ul li {
+     background-color: red; 
+    background-image: linear-gradient(
+        to right,
+        #77a1d3 0%,
+        #79cbca 51%,
+        #77a1d3 100%
+    );
+    margin: 5px;
+    padding: 12px;
+    width: 66px;
+    text-align: center;
+    border-radius: 5px;
+} */
+
+header ul li {
+    background-image: linear-gradient(
+        to right,
+        #ff6e7f 0%,
+        #bfe9ff 51%,
+        #ff6e7f 100%
+    );
+    margin: 10px;
+    padding: 15px 45px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    display: block;
+    cursor: pointer;
+    user-select: none;
+}
+
+header ul li:hover {
+    background-position: right center; /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    background-color: #e9e9e9;
+    flex-grow: 1;
+}
+
+footer {
+    background-color: #101010;
+    height: 100px;
+    color: white;
 }
