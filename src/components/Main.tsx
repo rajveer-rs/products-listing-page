@@ -57,7 +57,13 @@ function Main() {
     return (
         <main>
             {products.map((product) => {
-                return <Card title={product.title} url={product.images} />;
+                return (
+                    <Card
+                        title={product.title}
+                        url={product.images}
+                        key={product.id}
+                    />
+                );
             })}
         </main>
     );
